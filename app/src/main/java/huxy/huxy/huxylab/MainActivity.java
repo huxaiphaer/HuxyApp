@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onShowToast(View v){
 
-        HuxyApp.successToast(MainActivity.this,"Hey are you okay , or you are not fine ", Gravity.BOTTOM,0,0);
+        HuxyApp.successToast(MainActivity.this,"Hey are you okay , or you are not fine ", Gravity.CENTER,0,0);
     }
 }
