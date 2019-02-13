@@ -11,7 +11,7 @@ This is a Library which helps developers to come up with cool and awesome toast 
 1. Android.
 2. Java.
 
-##How to set up HuxyApp.
+## How to set up HuxyApp.
 
 **Step 1.**
 -  Add the JitPack repository to your build file as below :
