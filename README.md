@@ -31,7 +31,7 @@ This is a Library which helps developers to come up with cool and awesome toast 
 
 ```
 dependencies {
-	        implementation 'com.github.huxaiphaer:HuxyLab:Tag'
+	         implementation 'com.github.huxaiphaer:HuxyLab:1.1'
 	}
 ```
 
