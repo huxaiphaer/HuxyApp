@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /***
+     * Click
+     * @param v
+     */
+
     public void onShowToast(View v){
 
         HuxyApp.warningToast(MainActivity.this,
