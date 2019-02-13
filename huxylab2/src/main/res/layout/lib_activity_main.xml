@@ -11,12 +11,7 @@
     <TextView android:id="@+id/header1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        />
-    <TextView android:id="@+id/header2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:textSize="16dp"
         android:textColor="#FFF"
         />
 </LinearLayout>
