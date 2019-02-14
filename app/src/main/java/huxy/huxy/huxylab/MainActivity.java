@@ -1,7 +1,7 @@
 package huxy.huxy.huxylab;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 
@@ -14,19 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
     }
 
-    /***
-     * Click
-     * @param v
-     */
+    public void onShowToast(View view){
 
-    public void onShowToast(View v){
-
-        HuxyApp.warningToast(MainActivity.this,
-                "Hey are you okay , or you are not fine ",
-                Gravity.CENTER,
-                0,0);
-
+        HuxyApp.dangerToast(MainActivity.this,"Hey there are you good.")
+                .setPositionAndOffSet(Gravity.CENTER,0,0).setTextSize(15f);
     }
 }
