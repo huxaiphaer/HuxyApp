@@ -9,6 +9,9 @@ import huxy.huxy.huxylab2.HuxyApp;
 
 public class MainActivity extends AppCompatActivity {
 
+    public String textColor = "#ffffff";
+    public String bg = "#000000";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onShowToast(View view){
 
-        HuxyApp.dangerToast(MainActivity.this,"Hey there are you good.")
-                .setPositionAndOffSet(Gravity.CENTER,0,0).setTextSize(15f);
+        HuxyApp.customToast(MainActivity.this,
+                "No internet connection please.",
+                bg,textColor).setTextSize(15f).setPadding(3).setPositionAndOffSet(Gravity.CENTER,200,20);
     }
 }
