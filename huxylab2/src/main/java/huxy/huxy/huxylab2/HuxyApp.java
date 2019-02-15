@@ -1,6 +1,7 @@
 package huxy.huxy.huxylab2;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -104,6 +105,39 @@ public class HuxyApp extends AppCompatActivity {
     }
 
     /**
+     * This is the method for a custom toast message, you can change the color of text and the background.
+     *
+     * @param activity            This is the Activity.
+     * @param message             The toast message.
+     * @param backgroundColorCode This is the background clor.
+     * @param textColorCode       This is the text color.
+     * @return Returns the instance.
+     */
+    public static HuxyApp customToast(Activity activity, String message, String backgroundColorCode, String textColorCode) {
+
+        inflater = activity.getLayoutInflater();
+        View layout = inflater.inflate(R.layout.lib_activity_main,
+                (ViewGroup) activity.findViewById(R.id.custom_toast_container));
+
+        layout.setBackgroundColor(activity
+                .getResources().getColor(R.color.warningMessage));
+
+        text = layout.findViewById(R.id.header1);
+        text.setText(message);
+        text.setTextColor(Color.parseColor(textColorCode));
+        layout.setBackgroundColor(Color.parseColor(backgroundColorCode));
+
+        toast = new Toast(activity);
+
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+
+        return INSTANCE;
+
+    }
+
+    /**
      * This method is capable for setting the position and offsets.
      *
      * @param position This aligns the toast position.
@@ -117,12 +151,24 @@ public class HuxyApp extends AppCompatActivity {
         return INSTANCE;
     }
 
+    /**
+     * This is responsible setting the textSize.
+     *
+     * @param size This is the size of the Toast message.
+     * @return
+     */
     public static HuxyApp setTextSize(float size) {
 
         text.setTextSize(size);
         return INSTANCE;
     }
 
+    /**
+     * This is responsible for setting padding.
+     *
+     * @param padding This is the padding of toast message.
+     * @return returns the instance of the class.
+     */
     public static HuxyApp setPadding(int padding) {
         text.setPadding(padding, padding, padding, padding);
         return INSTANCE;
