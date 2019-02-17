@@ -60,7 +60,7 @@ Below is the sample of the Toast :
 ##### Below is an example :
 
 ```
- HuxyApp.successToast(MainActivity.this, "Logged in Successfully.")
+ HuxyApp.successToast(MainActivity.this, "Good Internet Connection")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
@@ -71,7 +71,7 @@ Below is the Example of Danger toast, you need to specify the `dangerToast()`. B
 
 
 ```
-HuxyApp.dangerToast(MainActivity.this, "No internet connection please.")
+HuxyApp.dangerToast(MainActivity.this, "Bad Internet Connection")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
@@ -84,7 +84,7 @@ This is an example of the toast message.
 Below is the example of a warningToast. You just need to specify the method `warningToast()`. By default this toast's background is **ORANGE**
 
 ```
-HuxyApp.warningToast(MainActivity.this, "Weak password please.")
+HuxyApp.warningToast(MainActivity.this, "Slow Internet Connection")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
@@ -99,7 +99,7 @@ This is an example of a warning message.
 If you want to come up with your custom message, such as changing the **Background** color or the **texColor** etc. you 
 have to use the `customToast()`.
 
-Below is the example :
+Below is the implementation :
 
 ```
  String Bg = "#000000";
@@ -108,6 +108,10 @@ Below is the example :
                 .setPositionAndOffSet(Gravity.BOTTOM,0,20);
 
 ```
+
+Below is a sample of the output.
+
+![customtoast](https://user-images.githubusercontent.com/14312249/52918038-9341eb00-3303-11e9-8821-7a31f76bfc01.gif)
 
 ### Setting a custom Font Style For the Toast Message.
 
@@ -140,6 +144,9 @@ Then create a folder called **font** inside the *res* folder. e.g *app/src/main/
 Place any font of your choice , and then run the application. The toast should appear with your font style or type.
 
 
+Below is the sample of the output.
+
+![custom_font](https://user-images.githubusercontent.com/14312249/52918043-9c32bc80-3303-11e9-9eec-170c170bb101.gif)
 
 
 
