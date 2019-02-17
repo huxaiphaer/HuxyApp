@@ -53,6 +53,10 @@ The code above enables a developer to set the Context , Message , Position of th
 
 So the developer can be able to set the properties of the application. Since this is the Success Toast , it comes with a **GREEN** background color.
 
+Below is the sample of the Toast :
+
+![success_toast_gif](https://user-images.githubusercontent.com/14312249/52917727-ec0f8480-32ff-11e9-8699-4e0d4f87fa33.gif)
+
 ##### Below is an example :
 
 ```
@@ -65,11 +69,16 @@ So the developer can be able to set the properties of the application. Since thi
 
 Below is the Example of Danger toast, you need to specify the `dangerToast()`. By default this toast's background is **RED**.
 
+
 ```
 HuxyApp.dangerToast(MainActivity.this, "No internet connection please.")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
+
+This is an example of the toast message.
+
+![dangertoast](https://user-images.githubusercontent.com/14312249/52917729-f467bf80-32ff-11e9-8783-96a6d3581337.gif)
 
 ### For a Warning Message.
 Below is the example of a warningToast. You just need to specify the method `warningToast()`. By default this toast's background is **ORANGE**
@@ -79,6 +88,11 @@ HuxyApp.warningToast(MainActivity.this, "Weak password please.")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
+
+This is an example of a warning message.
+
+![warningtoast](https://user-images.githubusercontent.com/14312249/52917731-fb8ecd80-32ff-11e9-8984-073d575bb7fa.gif)
+
 
 ### For a custom Toast Message.
 
