@@ -105,7 +105,7 @@ Below is the example :
  String Bg = "#000000";
         String textColor ="#ffffff";
         HuxyApp.customToast(MainActivity.this, "No internet connection please.",Bg,textColor)
-                .setPositionAndOffSet(Gravity.BOTTOM,0,0);
+                .setPositionAndOffSet(Gravity.BOTTOM,0,20);
 
 ```
 
