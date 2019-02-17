@@ -16,21 +16,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
-    public void onShowToast(View view){
+    public void onShowToast(View view) {
 
         String Bg = "#000000";
-        String textColor ="#ffffff";
+        String textColor = "#ffffff";
 
-//        HuxyApp.customToast(MainActivity.this, "No internet connection please.",Bg,textColor)
-//                .setPositionAndOffSet(Gravity.BOTTOM,0,0)
-//                .setFontStyle(this,R.font.felipa_regular);
-
-        HuxyApp.warningToast(MainActivity.this, "Slow Internet Connection.")
-                .setPositionAndOffSet(Gravity.CENTER,0,0);
+        HuxyApp.customToast(MainActivity.this, "No internet connection please.", Bg, textColor)
+                .setPositionAndOffSet(Gravity.BOTTOM, 0, 20)
+                .setFontStyle(this, R.font.felipa_regular);
 
     }
 }
