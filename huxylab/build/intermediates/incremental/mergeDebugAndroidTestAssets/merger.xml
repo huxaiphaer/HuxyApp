@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="__tested_artifact__::huxylab2"><source path="/Users/idrislutaaya/Desktop/HuxyLab/huxylab2/build/intermediates/packagedAssets/debug"/></dataSet><dataSet config="main"><source path="/Users/idrislutaaya/Desktop/HuxyLab/huxylab2/src/androidTest/assets"/><source path="/Users/idrislutaaya/Desktop/HuxyLab/huxylab2/build/generated/assets/shaders/androidTest/debug"/></dataSet><dataSet config="debug"><source path="/Users/idrislutaaya/Desktop/HuxyLab/huxylab2/src/androidTestDebug/assets"/></dataSet></merger>
