@@ -60,7 +60,7 @@ Below is the sample of the Toast :
 ##### Below is an example :
 
 ```
- HuxyApp.successToast(MainActivity.this, "Logged in Successfully.")
+ HuxyApp.successToast(MainActivity.this, "Good Internet Connection")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
@@ -71,7 +71,7 @@ Below is the Example of Danger toast, you need to specify the `dangerToast()`. B
 
 
 ```
-HuxyApp.dangerToast(MainActivity.this, "No internet connection please.")
+HuxyApp.dangerToast(MainActivity.this, "Bad Internet Connection")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
@@ -84,7 +84,7 @@ This is an example of the toast message.
 Below is the example of a warningToast. You just need to specify the method `warningToast()`. By default this toast's background is **ORANGE**
 
 ```
-HuxyApp.warningToast(MainActivity.this, "Weak password please.")
+HuxyApp.warningToast(MainActivity.this, "Slow Internet Connection")
                 .setPadding(3)
                 .setPositionAndOffSet(Gravity.CENTER,0,0);
 ```
