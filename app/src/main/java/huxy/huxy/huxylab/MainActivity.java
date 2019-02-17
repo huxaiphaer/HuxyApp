@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         String Bg = "#000000";
         String textColor = "#ffffff";
 
+
         HuxyApp.customToast(MainActivity.this, "No internet connection please.", Bg, textColor)
                 .setPositionAndOffSet(Gravity.BOTTOM, 0, 20)
                 .setFontStyle(this, R.font.felipa_regular);
