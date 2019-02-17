@@ -11,7 +11,7 @@ HuxyApp is a Library which helps android developers to come up with cool and awe
 1. Android.
 2. Java.
 
-##How to set up HuxyApp.
+## How to set up HuxyApp (Toast Library).
 
 **Step 1.**
 -  Add the JitPack repository to your build file as below :
