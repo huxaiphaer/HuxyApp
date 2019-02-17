@@ -2,6 +2,9 @@ package huxy.huxy.huxylab2;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Typeface;
+import android.os.Build;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -119,9 +122,6 @@ public class HuxyApp extends AppCompatActivity {
         View layout = inflater.inflate(R.layout.lib_activity_main,
                 (ViewGroup) activity.findViewById(R.id.custom_toast_container));
 
-        layout.setBackgroundColor(activity
-                .getResources().getColor(R.color.warningMessage));
-
         text = layout.findViewById(R.id.header1);
         text.setText(message);
         text.setTextColor(Color.parseColor(textColorCode));
@@ -171,6 +171,29 @@ public class HuxyApp extends AppCompatActivity {
      */
     public static HuxyApp setPadding(int padding) {
         text.setPadding(padding, padding, padding, padding);
+        return INSTANCE;
+    }
+
+    /**
+     * This method deals with setting the font types or styles of the toast
+     * message.
+     * @param activity This is context of the application.
+     * @param fontType This is the path of the font. e.g (R.id.font_name)
+     * @return
+     */
+
+    public HuxyApp setFontStyle(Activity activity, int fontType) {
+
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            Typeface typeface = activity.getResources().getFont(fontType);
+            text.setTypeface(typeface);
+        } else {
+
+            Typeface typeface = ResourcesCompat.getFont(activity, fontType);
+            text.setTypeface(typeface);
+        }
+
         return INSTANCE;
     }
 
