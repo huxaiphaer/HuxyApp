@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
         String Bg = "#000000";
         String textColor ="#ffffff";
 
-        HuxyApp.customToast(MainActivity.this, "No internet connection please.",Bg,textColor)
-                .setPositionAndOffSet(Gravity.BOTTOM,0,0)
-                .setFontStyle(this,R.font.felipa_regular);
-
-//        HuxyApp.successToast(MainActivity.this, "Good Internet Connection.")
+//        HuxyApp.customToast(MainActivity.this, "No internet connection please.",Bg,textColor)
 //                .setPositionAndOffSet(Gravity.BOTTOM,0,0)
 //                .setFontStyle(this,R.font.felipa_regular);
+
+        HuxyApp.warningToast(MainActivity.this, "Slow Internet Connection.")
+                .setPositionAndOffSet(Gravity.CENTER,0,0);
+
     }
 }
