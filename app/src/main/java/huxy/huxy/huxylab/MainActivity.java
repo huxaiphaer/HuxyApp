@@ -22,9 +22,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void onShowToast(View view){
 
-        String Bg = "#000";
-        String textColor ="#fff";
+        String Bg = "#000000";
+        String textColor ="#ffffff";
+
         HuxyApp.customToast(MainActivity.this, "No internet connection please.",Bg,textColor)
-                .setPositionAndOffSet(Gravity.BOTTOM,0,0);
+                .setPositionAndOffSet(Gravity.BOTTOM,0,0)
+                .setFontStyle(this,R.font.felipa_regular);
+
+//        HuxyApp.successToast(MainActivity.this, "Good Internet Connection.")
+//                .setPositionAndOffSet(Gravity.BOTTOM,0,0)
+//                .setFontStyle(this,R.font.felipa_regular);
     }
 }

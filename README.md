@@ -1,9 +1,12 @@
 [![](https://jitpack.io/v/huxaiphaer/HuxyLab.svg)](https://jitpack.io/#huxaiphaer/HuxyLab)
 
 
+# Create a customized toast message with amazing features , with few lines of code Today.
+
 ## HuxyApp
 
-HuxyApp is a Library which helps android developers to come up with cool and awesome  styled toast notifications.
+HuxyApp is a Library eases creating custom and styled 
+toast notifications with few lines of code.
 
 ### Try it out today.
 
@@ -79,7 +82,7 @@ HuxyApp.warningToast(MainActivity.this, "Weak password please.")
 
 ### For a custom Toast Message.
 
-If you want to come up with your custom message, sucg as changing the **Background** color or the **texColor** etc. you 
+If you want to come up with your custom message, such as changing the **Background** color or the **texColor** etc. you 
 have to use the `customToast()`.
 
 Below is the example :
@@ -92,6 +95,54 @@ Below is the example :
 
 ```
 
+### Setting a custom Font Style For the Toast Message.
+
+This library gives a capability of setting a toast message with a different font style such as Times New Roman,
+Calibri, Arial etc. 
+
+Steps to set up a custom font styled toast message.
+
+- Step 1.
+
+Initialize **HuxyApp** and give it an attribute called `setFontStyle(Context,FontPath)`. 
+
+```
+HuxyApp.customToast(MainActivity.this, "No internet connection please.",Bg,textColor)
+                .setPositionAndOffSet(Gravity.BOTTOM,0,0)
+                .setFontStyle(this,R.font.font_name);
+
+```
+
+- Step 2.
+
+Download the font of your choice , you can use [Google Fonts Site](https://fonts.google.com/)
+
+- Step 3.
+
+Then create a folder called **font** inside the *res* folder. e.g *app/src/main/res/font*
+
+- Step 4.
+
+Place any font of your choice , and then run the application. The toast should appear with your font style or type.
+
+
+
+
+
+
+
+### Contribution to the Library.
+
+Feel free to contribute to this Project , by raising Pull Requests (PRs), so that they are reviewed and merged. Contributors could also take the initiative of reviewing other developers PRs.
+
+
+
+
 
 *If you are happy with the library, please donate.*
 
+
+
+### Authors.
+
+- Lutaaya Huzaifah Idris [Personal Profile](https://codementor.io/lutaayahuzaifahidris/)
