@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onShowToast(View view){
 
-        HuxyApp.customToast(MainActivity.this,
-                "No internet connection please.",
-                bg,textColor).setTextSize(15f).setPadding(3).setPositionAndOffSet(Gravity.CENTER,200,20);
+        String Bg = "#000";
+        String textColor ="#fff";
+        HuxyApp.customToast(MainActivity.this, "No internet connection please.",Bg,textColor)
+                .setPositionAndOffSet(Gravity.BOTTOM,0,0);
     }
 }
