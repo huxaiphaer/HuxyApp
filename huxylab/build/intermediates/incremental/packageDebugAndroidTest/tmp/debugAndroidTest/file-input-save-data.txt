@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Feb 08 10:27:54 EAT 2019
+0.baseType=DIRECTORY
+0.base=/Users/idrislutaaya/Desktop/HuxyLab/huxylab2/build/intermediates/transforms/dexMerger/androidTest/debug/0
+0.path=classes.dex
+0.set=DEX
+count=1
